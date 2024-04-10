@@ -1,0 +1,25 @@
+<p>upg3!</p>
+<div>
+    <h2>Produktkatalog</h2>
+
+    <!-- Formulär för att lägga till en ny produkt -->
+    <div>
+        <h3>Lägg till produkt</h3>
+        <input [(ngModel)]="newProduct.id" type="number" placeholder="ID">
+        <input [(ngModel)]="newProduct.name" type="text" placeholder="Namn">
+        <input [(ngModel)]="newProduct.price" type="number" placeholder="Pris">
+        <input [(ngModel)]="newProduct.category" type="text" placeholder="Kategori">
+        <button (click)="addProduct()">Lägg till Produkt</button>
+    </div>
+
+    <!-- Lista av produkter -->
+    <div>
+        <h3>Produktlista</h3>
+        <ul>
+        <li *ngFor="let product of products">
+            ID: {{ product.id }}, Namn: {{ product.name }}, Pris: {{ product.price }}, Kategori: {{ product.category }}
+        </li>
+        </ul>
+    </div>
+</div>
+  
