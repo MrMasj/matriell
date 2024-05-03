@@ -1,0 +1,18 @@
+<div>
+    <input type="text" [(ngModel)]="inputString" placeholder="Enter string">
+    <input type="text" [(ngModel)]="inputChar" placeholder="Enter character">
+    <button (click)="result = countChar(inputString, inputChar)">Count Character</button>
+    <p>Occurrences of '{{ inputChar }}' in '{{ inputString }}': {{ result }}</p>
+</div>
+
+<div>
+    <p>Original list: {{ originalList }}</p>
+    <button (click)="reverse()">Reverse List</button>
+    <p>Reversed list: {{ reversedList }}</p>
+</div>
+
+
+<b>List</b>
+<div *ngFor="let entry of dataList">
+    {{entry.name}}
+</div>
