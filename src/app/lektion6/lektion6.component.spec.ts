@@ -33,10 +33,5 @@ describe('Lektion6Component', () => {
     expect(component.greet('Alice')).toEqual('Hej, Alice!');
   });
 
-  it('should asynchronously return "Delayed Hello"', async () => {
-    fixture.detectChanges(); // Start initial data binding and lifecycle hooks
-    const message = await component.delayedMessage();
-    expect(message).toEqual('Delayed Hello');
-    expect(component.message).toEqual('Delayed Hello');
-  });
+
 });

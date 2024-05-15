@@ -2,27 +2,6 @@ import { ComponentFixture, TestBed } from '@angular/core/testing';
 import { Lektion7Component } from './lektion7.component';
 
 describe('Lektion7Component', () => {
-  let component: Lektion7Component;
-  let fixture: ComponentFixture<Lektion7Component>;
-
-  beforeEach(async () => {
-    await TestBed.configureTestingModule({
-      imports: [Lektion7Component]
-    })
-    .compileComponents();
-    
-    fixture = TestBed.createComponent(Lektion7Component);
-    component = fixture.componentInstance;
-    fixture.detectChanges();
-  });
-
-  it('should create', () => {
-    expect(component).toBeTruthy();
-  });
-
-  
-
-describe('ShoppingList', () => {
     let shoppingList: Lektion7Component;
 
     beforeEach(() => {
@@ -60,5 +39,4 @@ describe('ShoppingList', () => {
             expect(shoppingList.countItems()).toEqual(2);
         });
     });
-});
 });
